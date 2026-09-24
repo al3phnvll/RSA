@@ -29,16 +29,4 @@ def int_to_text(i):
     length_of_bits = ((i.bit_length() + 7) // 8) 
     return int.to_bytes(i ,length_of_bits).decode()
 
-kp = keygen()
 
-message = "hi"
-
-m = text_to_int(message)
-print(m)
-cipher = encrypt(m,kp.e, kp.n)
-print(cipher)
-
-decoded = decrypt(cipher,kp.d, kp.n)
-decode_cipher = int_to_text(decoded)
-
-print(decode_cipher)

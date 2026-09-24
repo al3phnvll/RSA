@@ -214,3 +214,4 @@ print(kp.p, kp.q, kp.n, kp.e, kp.d)
 # Correctness check: (e * d) mod phi(n) should equal 1 — this is the
 # concrete instance of the proof in calc_d()'s docstring, verified on
 # actual generated numbers rather than just trusted algebraically.
+
